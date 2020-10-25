@@ -1,0 +1,20 @@
+
+<div align="center">
+
+<div><{$block.msgs}></div>
+
+<ul><{foreach item=blk from=$block.blk}>
+  <li><{$blk.text}> ( <{$blk.name}> ) <{$blk.time}><br>----------<br></li>
+<{/foreach}></ul>
+
+<div><{$block.pagenav}></div>
+
+<br>
+
+<div><input type="button" value="<{$block.btn}>" onClick="openWithSelfMain('<{$xoops_url}>/modules/mbbs/popup.php', 'mbbs', 450, 370)" class="formButton"></div>
+
+<br>
+
+<div align="right"><a href="javascript:void(0);" onClick="openWithSelfMain('<{$xoops_url}>/modules/mbbs/help<{if $xoops_langcode != 'ja'}>_en<{/if}>.php', 'help', 450, 130)"><img src="<{$xoops_url}>/modules/mbbs/images/chacha.gif" alt=""></a> &nbsp;</div>
+
+</div>
